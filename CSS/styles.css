@@ -119,37 +119,15 @@ nav a {
 
 .feature-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 18px;
 }
 
-.section-layout {
-	display: grid;
-	grid-template-columns: 1.2fr 0.8fr;
-	gap: 20px;
-	align-items: center;
-	text-align: left;
-}
-
-.section-layout-reverse .section-media {
-	order: -1;
-}
-
-.section-layout .card {
-	text-align: left;
-}
-
-.section-media img {
+.feature-grid .card:last-child {
+	grid-column: 1 / -1;
+	max-width: 520px;
 	width: 100%;
-	max-width: 360px;
-	display: block;
-	margin-left: auto;
-	border-radius: 10px;
-}
-
-.section-layout-reverse .section-media img {
-	margin-left: 0;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .card {
@@ -241,7 +219,8 @@ nav a {
 	gap: 10px;
 }
 
-.contact-form input,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea,
 .contact-form select {
 	width: 100%;
@@ -256,6 +235,70 @@ nav a {
 }
 
 .contact-form .btn-primary {
+	justify-self: start;
+}
+
+.accessibility-preferences {
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	padding: 12px;
+	display: grid;
+	gap: 8px;
+}
+
+.accessibility-preferences legend {
+	padding: 0 6px;
+	font-weight: 600;
+}
+
+.accessibility-preferences label,
+.jobs-filter-form label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.accessibility-preferences input[type="checkbox"] {
+	width: auto;
+	padding: 0;
+	border: none;
+}
+
+.jobs-hero {
+	background: #e8efff;
+}
+
+.jobs-hero-content {
+	text-align: center;
+}
+
+.jobs-hero-content h2 {
+	margin-bottom: 10px;
+}
+
+.jobs-section {
+	background: #f7f9fc;
+}
+
+.jobs-filter-card {
+	background: #fff;
+	padding: 22px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.jobs-filter-card h3 {
+	margin-bottom: 14px;
+}
+
+.jobs-filter-form {
+	display: grid;
+	gap: 10px;
+}
+
+.jobs-filter-form .btn-primary {
 	justify-self: start;
 }
 
@@ -349,21 +392,7 @@ nav a {
 		justify-self: stretch;
 	}
 
-	.footer-main {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.footer-nav {
-		margin-left: 0;
-	}
-
-	.footer-bottom {
-		position: static;
-		margin-top: 8px;
-	}
-
-	.site-footer .container {
-		padding-bottom: 0;
+	.jobs-filter-form .btn-primary {
+		justify-self: stretch;
 	}
 }

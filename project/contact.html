@@ -24,7 +24,7 @@
 			<div class="container contact-hero-content">
 				<div class="email-sign" aria-hidden="true">✉</div>
 				<h2>Get in Touch</h2>
-				<p>Tell us about yourself and we'll help you find matching opportunities</p>
+				<p>Tell us if you're a student or new grad and we'll help you find matching opportunities</p>
 			</div>
 		</section>
 
@@ -45,10 +45,17 @@
 						<label for="work-status">Work Status</label>
 						<select id="work-status" name="work-status" required>
 							<option value="" selected disabled>Select your work status</option>
-							<option value="citizen-pr">Citizen / PR</option>
-							<option value="permit">Need work permit</option>
-							<option value="international">International student</option>
+							<option value="citizen-pr">PR / Citizen</option>
+							<option value="international-work-permit">International student (work permit)</option>
 						</select>
+
+						<fieldset class="accessibility-preferences">
+							<legend>Accessibility Preferences</legend>
+							<label><input type="checkbox" name="accessibility" value="accessible-workplace"> ♿ Accessible workplace</label>
+							<label><input type="checkbox" name="accessibility" value="remote-friendly"> 🏠 Remote-friendly</label>
+							<label><input type="checkbox" name="accessibility" value="mental-health-supportive"> 🧠 Mental health supportive environment</label>
+							<label><input type="checkbox" name="accessibility" value="flexible-work"> 🛠️ Flexible work arrangements</label>
+						</fieldset>
 
 						<button class="btn-primary" type="submit">Find Matching Jobs</button>
 					</form>
