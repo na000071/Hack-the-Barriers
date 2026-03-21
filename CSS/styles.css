@@ -309,6 +309,60 @@ nav a {
 	padding: 18px 0;
 }
 
+.site-footer .container {
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.footer-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+	text-align: left;
+}
+
+.footer-copy {
+	margin: 0;
+}
+
+.footer-nav {
+	display: flex;
+	gap: 16px;
+	margin-left: auto;
+}
+
+.footer-bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.social-links {
+	display: inline-flex;
+	gap: 4px;
+}
+
+.social-links a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	opacity: 0.9;
+}
+
+.social-links a:hover {
+	opacity: 1;
+}
+
+.social-links svg {
+	width: 12px;
+	height: 12px;
+	fill: currentColor;
+}
+
 @media (max-width: 768px) {
 	.nav-wrap {
 		flex-direction: column;
@@ -319,6 +373,19 @@ nav a {
 	.feature-grid,
 	.contact-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.section-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.section-layout-reverse .section-media {
+		order: 0;
+	}
+
+	.section-media img,
+	.section-layout-reverse .section-media img {
+		margin: 0 auto;
 	}
 
 	.contact-form .btn-primary {
