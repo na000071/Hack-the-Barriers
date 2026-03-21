@@ -242,6 +242,8 @@ nav a {
 }
 
 .contact-form input,
+.contact-form input[type="text"],
+.contact-form input[typr="email"],
 .contact-form textarea,
 .contact-form select {
 	width: 100%;
