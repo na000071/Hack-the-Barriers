@@ -4,23 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="jobs.html">Jobs</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </nav>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <h1 class="logo">Hack The Barriers</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>Find Co-op Jobs You're actually eligible </h1>
-            <p>No more wasted applications. Discover internships tailored to you.</p>
-            <input type="button" value="Get Started">
+        <section class="hero section">
+            <div class="container hero-content">
+                <div>
+                    <h2>Find Co-op Jobs You’re Actually Eligible For</h2>
+                    <p>No more wasted applications. Discover internships tailored to your goals and profile.</p>
+                    <button class="btn-primary" type="button">Get Started</button>
+                </div>
+                <img src="../images/istockphoto-1481370371-612x612.jpg" alt="Students exploring career options">
+            </div>
+        </section>
+
+        <section class="section features">
+            <div class="container">
+                <div class="problem-sign" aria-label="warning sign">⚠</div>
+                <p>Students often apply to jobs without knowing eligibility requirements. Many opportunities are missed or wasted.</p>
+            </div>
+        </section>
+
+        <section class="section process">
+            <div class="container">
+                <h2>Our Solution</h2>
+                <p class="section-subtitle">Three powerful features to help you find the right opportunities</p>
+                <div class="feature-grid">
+                    <article class="card">
+                        <div class="card-sign" aria-hidden="true">⚙</div>
+                        <h3>Eligibility Filters</h3>
+                        <p>Filter jobs by work authorization, experience, and skills.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-sign" aria-hidden="true">📋</div>
+                        <h3>Co-op Only Listings</h3>
+                        <p>Browse opportunities that are specifically listed for co-op students only.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-sign" aria-hidden="true">🎯</div>
+                        <h3>Smart Matching</h3>
+                        <p>Get role recommendations that match your profile, experience, and goals.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta">
+            <div class="container cta-content">
+                <h2>Start Building Your Career Today</h2>
+                <p>Take the next step and discover internships made for your path.</p>
+                <a class="btn-primary" href="jobs.html">Explore Jobs</a>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Hack The Barriers. All rights reserved.</p>
+        </div>
+    </footer>
     
 </body>
 </html>

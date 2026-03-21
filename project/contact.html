@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<h1 class="logo">Hack The Barriers</h1>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="jobs.html">Jobs</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="section contact-hero">
+			<div class="container contact-hero-content">
+				<div class="email-sign" aria-hidden="true">✉</div>
+				<h2>Get in Touch</h2>
+				<p>Tell us about yourself and we'll help you find matching opportunities</p>
+			</div>
+		</section>
+
+		<section class="section contact-section">
+			<div class="container">
+				<article class="contact-card">
+					<h3>Find Matching Jobs</h3>
+					<form class="contact-form" action="#" method="post">
+						<label for="name">Name</label>
+						<input id="name" name="name" type="text" placeholder="Your full name" required>
+
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" placeholder="your@email.com" required>
+
+						<label for="skills">Skills</label>
+						<input id="skills" name="skills" type="text" placeholder="e.g. JavaScript, Python, SQL" required>
+
+						<label for="work-status">Work Status</label>
+						<select id="work-status" name="work-status" required>
+							<option value="" selected disabled>Select your work status</option>
+							<option value="citizen-pr">Citizen / PR</option>
+							<option value="permit">Need work permit</option>
+							<option value="international">International student</option>
+						</select>
+
+						<button class="btn-primary" type="submit">Find Matching Jobs</button>
+					</form>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© 2026 Hack The Barriers. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
