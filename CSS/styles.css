@@ -91,11 +91,13 @@
 	margin-bottom: 4px;
 }
 .job-apply {
-	margin-top: 18px;
-	text-align: center;
-	width: fit-content;
-	align-self: center;
-	display: block;
+    margin-top: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
 }
 * {
     box-sizing: border-box;
