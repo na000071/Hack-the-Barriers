@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <h1 class="logo">Hack The Barriers</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section">
+            <div class="container hero-content">
+                <div>
+                    <h2>Co-op Opportunities</h2>
+                    <p>Find internships that match your eligibility</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <form action="#" method="get" class="contact-form">
+                    <div>
+                        <label for="search-job">Search job:</label>
+                        <input type="search" id="search-job" name="search-job" placeholder="Search jobs...">
+                    </div>
+                    <div>
+                        <label for="role">Role:</label>
+                        <select id="role" name="role">
+                            <option value="">All roles</option>
+                            <option value="Frontend">Frontend</option>
+                            <option value="Backend">Backend</option>
+                            <option value="Full Stack">Full Stack</option>
+                            <option value="UI/UX">UI/UX</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="DevOps">DevOps</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Location">Location:</label>
+                        <select id="Location" name="Location">
+                            <option value="">All locations</option>
+                            <option value="Remote">Remote</option>
+                            <option value="Onsite">Onsite</option>
+                            <option value="Hybrid">Hybrid</option>
+                        </select>
+                    </div>
+                    <div class="eligibility">
+                        <span class="label">Eligibility</span>
+
+                        <label class="option">
+                            <input type="checkbox" />
+                            International Students
+                        </label>
+
+                        <label class="option">
+                            <input type="checkbox" />
+                            Permanent Residents
+                        </label>
+
+                        <label class="option">
+                            <input type="checkbox" />
+                            Citizens
+                        </label>
+                    </div>
+                    <div class="eligibility">
+                        <span class="label">Accessiblity</span>
+
+                        <label class="option">
+                            <input type="checkbox" />
+                            Accessible workplace
+                        </label>
+
+                        <label class="option">
+                            <input type="checkbox" />
+                            Mental health supportive environment
+                        </label>
+
+                        <label class="option">
+                            <input type="checkbox" />
+                            Flexible work arrangements
+                        </label>
+                    </div>
+                    <button class="btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="job-cards"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            &copy; 2026 Hack The Barriers. All rights reserved.
+        </div>
+    </footer>
+    <script src="../JS/jobs.js"></script>
+        <script src="../JS/script.js"></script>
+</body>
+</html>

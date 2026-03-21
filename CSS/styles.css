@@ -1,7 +1,132 @@
+.job-meta {
+	margin: 10px 0 6px 0;
+	font-size: 0.98rem;
+	color: #444;
+	display: flex;
+	gap: 18px;
+}
+.job-badges {
+	margin-bottom: 10px;
+}
+.job-badge {
+	display: inline-block;
+	background: #e8efff;
+	color: #2563eb;
+	border-radius: 5px;
+	padding: 3px 10px;
+	font-size: 0.92rem;
+	margin-right: 7px;
+	margin-bottom: 4px;
+	font-weight: 600;
+}
+.job-badge.accessible {
+	background: #e0ffe8;
+	color: #15803d;
+}
+.job-badge.remote {
+	background: #e0f2fe;
+	color: #0369a1;
+}
+.job-badge.flexible {
+	background: #fef9c3;
+	color: #b45309;
+}
+.job-description {
+	margin-top: 10px;
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+/* Job Cards Styles */
+.job-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 28px;
+	margin-top: 24px;
+}
+.job-card {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 24px 20px 18px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 210px;
+	transition: box-shadow 0.2s;
+}
+.job-card:hover {
+	box-shadow: 0 4px 16px rgba(37,99,235,0.13);
+}
+.job-card-header {
+	margin-bottom: 10px;
+}
+.job-title {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 2px;
+	color: #2563eb;
+}
+.job-company {
+	font-size: 1rem;
+	color: #555;
+}
+.job-location {
+	font-size: 0.98rem;
+	color: #444;
+	margin-bottom: 8px;
+	display: block;
+}
+.job-tags {
+	margin: 8px 0 12px 0;
+}
+.job-tag {
+	display: inline-block;
+	background: #e8efff;
+	color: #2563eb;
+	border-radius: 5px;
+	padding: 3px 10px;
+	font-size: 0.92rem;
+	margin-right: 7px;
+	margin-bottom: 4px;
+}
+.job-apply {
+	margin-top: 18px;
+	text-align: center;
+	width: fit-content;
+	align-self: center;
+	display: block;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+.eligibility {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.label {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
 
 body {
